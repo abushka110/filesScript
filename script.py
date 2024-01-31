@@ -5,7 +5,7 @@
 import os
 
 # Open the file
-with open('script/filesFolders.txt', 'r') as f:
+with open('filesFolders.txt', 'r') as f:
     lines = f.readlines()
 
 # Initialize the current directory to the root directory
