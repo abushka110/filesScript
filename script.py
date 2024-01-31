@@ -12,7 +12,6 @@ with open('filesFolders.txt', 'r') as f:
 current_dir = 'test'
 
 # Iterate over each line in the file
-# Iterate over each line in the file
 for line in lines:
     line = line.strip()  # Remove leading/trailing whitespace
 
