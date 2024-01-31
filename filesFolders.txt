@@ -1,0 +1,13 @@
+folder 1. Programming terminology
+1. Programming exercise: Fix the syntax
+3. Programming exercise: Typecasting
+folder 2. More conditionals
+3. Programming exercise: The elder
+4. Programming exercise: Alphabetically last
+folder 3. Combining conditions
+1. Programming exercise: Age check
+2. Programming exercise: Nephews
+3. Programming exercise: Grades and points
+folder 4. Simple loops
+1. Programming exercise: Shall we continue?
+2. Programming exercise: Input validation
