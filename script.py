@@ -4,6 +4,11 @@
 
 import os
 
+# Function to format the directory or file name
+def format_name(name):
+    name = name.replace(':', '').replace('.', '')
+    return '-'.join(word.capitalize() for word in name.split())
+
 # Open the file
 with open('filesFolders.txt', 'r') as f:
     lines = f.readlines()
@@ -19,35 +24,15 @@ for line in lines:
     if line.lower().startswith('folder'):
         # Remove 'folder' from the directory name
         line = line.replace('folder ', '')
-
-                # Capitalize the first letter of every word
-        line = ' '.join(word[0].upper() + word[1:] for word in line.split())
-
-        # Replace spaces with "-"
-        line = line.replace(' ', '-')
-
-        # Remove ":" and "."
-        line = line.replace(':', '')
-        line = line.replace('.', '')
-
+        
         # Create the directory under the root directory
-        current_dir = os.path.join('test', line)
+        current_dir = os.path.join('test', format_name(line))
         os.makedirs(current_dir, exist_ok=True)
     else:
-        # Capitalize the first letter of every word
-        line = ' '.join(word[0].upper() + word[1:] for word in line.split())
-
-        # Replace spaces with "-" in file names
-        line = line.replace(' ', '-')
-
-        # Remove ":" and "."
-        line = line.replace(':', '')
-        line = line.replace('.', '')
-
         # Skip files that contain 'Quiz'
         if 'Quiz' in line:
             continue
 
         # Create a Python file in the current directory
-        with open(os.path.join(current_dir, f"{line}.py"), 'w') as f:
+        with open(os.path.join(current_dir, f"{format_name(line)}.py"), 'w') as f:
             pass
