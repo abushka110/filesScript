@@ -7,6 +7,7 @@ Run .py file in folde, where you need to create files
 By default files will be created in "test" folder
 
 Exaple:
+
 Input:
 ```
 folder 1. Programming terminology
