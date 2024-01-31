@@ -18,7 +18,7 @@ folder 1. Programming terminology
 
 Will create:
 ```
-1-Programming-terminology/1-Programming-exercise-Fix-the syntax.py
-1-Programming-terminology/2-Programming-exercise-Number-of-characters.py
-1-Programming-terminology/3-Programming-exercise-Typecasting.py
+1-Programming-Terminology/1-Fix-The-Syntax.py
+1-Programming-Terminology/2-Number-Of-Characters.py
+1-Programming-Terminology/3-Typecasting.py
 ```
