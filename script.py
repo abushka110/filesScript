@@ -33,6 +33,9 @@ for line in lines:
         if 'Quiz' in line:
             continue
 
+        # Remove 'Programming exercise: ' from the file name
+        line = line.replace('Programming exercise: ', '')
+        
         # Create a Python file in the current directory
         with open(os.path.join(current_dir, f"{format_name(line)}.py"), 'w') as f:
             pass
