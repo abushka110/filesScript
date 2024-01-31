@@ -1,5 +1,5 @@
 Script to create directories and python files, from txt file.
-directories need to be marked "folders" at the beginning
+directories need to be marked "folder" at the beginning
 python file will be created in the last scanned directory
 
 Run .py file in folde, where you need to create files
