@@ -20,6 +20,9 @@ for line in lines:
         # Remove 'folder' from the directory name
         line = line.replace('folder ', '')
 
+                # Capitalize the first letter of every word
+        line = ' '.join(word[0].upper() + word[1:] for word in line.split())
+
         # Replace spaces with "-"
         line = line.replace(' ', '-')
 
@@ -31,6 +34,9 @@ for line in lines:
         current_dir = os.path.join('test', line)
         os.makedirs(current_dir, exist_ok=True)
     else:
+        # Capitalize the first letter of every word
+        line = ' '.join(word[0].upper() + word[1:] for word in line.split())
+
         # Replace spaces with "-" in file names
         line = line.replace(' ', '-')
 
